@@ -2,61 +2,260 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Tags HTML</title>
+    <style>
+        body{
+            margin: 15px;
+            padding: 15px;
+            font-size: 17px;
+            background-color: rgb(207, 213, 223);
+        }
+
+        header h1{
+            text-align: center;
+            color: rgb(26, 98, 96);
+        }
+
+        nav ul {
+            display:inline-flex;
+            list-style: none;
+            margin: 10px;
+            
+        }
+
+        nav ul li a{
+            padding: 5px 5px;
+            text-decoration: none;
+            border-radius: 15px 0;
+            color: rgb(26, 98, 96);
+        }
+
+        nav ul li a:hover{
+            color: whitesmoke;
+            background-color: rgb(26, 98, 96);
+        }
+        
+        small a{
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 15px 0;
+            color: rgb(26, 98, 96);
+        }
+
+        small a:hover{
+            color: whitesmoke;
+            background-color: rgb(26, 98, 96);
+        }
+        
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+            color: rgb(26, 98, 96);
+        }
+
+        h2, h3{
+            text-align: center;
+            color: rgb(26, 98, 96);
+        }
+
+    
+       
+        p{
+            margin:  15px 0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .wrapper{
+            text-align: center;
+        }
+
+        ol.centered-inline {
+            display: inline-block;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+        ol.centered-inline li {
+            margin: .5rem 0;
+        }
+
+        ul.centered-inline {
+            display: inline-block;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+        ul.centered-inline li {
+            margin: .5rem 0;
+        }
+            
+        footer{
+            text-align: center;
+            margin-top: 35px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <header>
+        <h1 id="inicio">Trilha HTLM DIO.ME </h1>
+    </header>
+    <main>
+        <hr />
+        <nav>
+            <ul>
+                <li><a href="#h1"> H1 até H6 |</a> </li>
+                <li> <a href="#p"> Tag p |</a></li>
+                <li> <a href="#mark">Tag mark |</a> </li>
+                <li><a href="#small">Tag small |</a></li>
+                <li><a href="#i">Tag i |</a></li>
+                <li><a href="#u">Tag u |</a></li>
+                <li><a href="#strong">Tag strong |</a></li>
+                <li><a href="#ol">Tag ol |</a></li>
+                <li><a href="#ul">Tag ul |</a></li>
+                <li><a href="#li">Tag li |</a></li>
+                <li><a href="#a">Tag a |</a></li>
+                <li><a href="#hr">Tag hr |</a></li>
+                <li><a href="#sub">Tag sub |</a></li>
+                <li><a href="#sup">Tag sup |</a></li>
+                <li><a href="#block">Tag blockquote | </a></li>
+                <li><a href="#del">Tag del |</a></li>
+                <li><a href="#abbr">Tag abbr |</a></li>
+                <li><a href="#ref">Referências</a></li>
+            </ul>
+        </nav>
+
+        <p>Este é um projeto do curso da DIO que consiste em apresentar um resumo básico de definições de tags HTML.
+
+        <h1 id="h1">Tags &lt;h1&gt;  &lt;h6&gt;</h1>
+
+        <p>Definição: Os títulos HTML são definidos com as tags de  &lt;h1&gt; até   &lt;h6&gt; .A Tag &lt;h1&gt; define o título mais importante. A Tag &lt;h6&gt; define o título menos importante. Exemplos: 
+            <h1>Isto é um título h1</h1>
+            <h2>Isto é um título h2</h2>
+            <h3>Isto é um título h3</h3>
+        </p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="p"> Parágrafos</h1>
+        <p>Os parágrafos HTML são definidos com a &lt;p&gt; tag. Exemplo: </p>
+        <p>Isto é um parágrafo</p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="mark"> Texto Destacado</h1>
+        <p>A &lt;mark&gt; tag define o texto que deve ser marcado ou destacado. Exemplo: </p>
+        <p>Texto em <mark>destaque.</mark></p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="small"> Texto Pequeno</h1>
+        <p>A &lt;small&gt; tag define textos menores (como direitos autorais e outros comentários paralelos). Exemplo: </p>
+        <p>Texto em tamanho <small>menor.</small></p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="i"> Tag HTML &lt;i&gt;</h1>
+        <p>A &lt;i&gt; tag define uma parte do texto em um tom ou modo alternativo. O conteúdo interno normalmente é exibido em <i>itálico</i>. É frequentemente usada para indicar um termo técnico, uma frase de outro idioma, um pensamento, um nome de navio, etc. Exemplo: </p>
+        <p>Texto em formato <i>itálico.</i></p>
+        <small><a href="#inicio">Voltar </a></small>
+
+        <h1 id="u"> Tag HTML &lt;u&gt;</h1>
+        <p>A &lt;u&gt; tag representa algum texto não articulado e com estilo diferente do texto normal, como palavras com erros ortográficos ou nomes próprios em texto chinês. O conteúdo interno normalmente é exibido com um sublinhado. Você pode alterar isso com CSS. Exemplo: </p>
+        <p>Palavra com erro de <u>ortografiah.</u></p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="strong"> Tag HTML &lt;strong&gt;</h1>
+        <p>A &lt;strong&gt; tag é usada para definir texto com grande importância. O conteúdo interno normalmente é exibido em <b>negrito</b>. Exemplo: </p>
+        <p>Palavra com <strong>importância.</strong></p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="ol"> Tag HTML &lt;ol&gt;</h1>
+        <p>A &lt;ol&gt; tag define uma lista ordenada. Uma lista ordenada pode ser numérica ou alfabética. Exemplo: </p>
+        <div class="wrapper">
+            <ol class="centered-inline">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+        </div>
+        
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="ul"> Tag HTML  &lt;ul&gt;</h1>
+        <p>A &lt;ul&gt; tag define uma lista não ordenada. Exemplo: </p>
+        <div class="wrapper">
+            <ul class="centered-inline">
+                <li>Café</li>
+                <li>Chá</li>
+                <li>Leite</li>
+            </ul>
+
+        </div>
+        
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="li"> Tag HTML &lt;li&gt;</h1>
+        <p>A  &lt;li&gt; tag define um item das listas ordenadas, não ordenadas e menu. Exemplo: </p>
+        <div class="wrapper">
+            <ul class="centered-inline">
+                <li>Item da lista 1</li>
+                <li>Item da lista 2</li>
+                <li>Item da lista 3</li>
+        </ul>
+
+        </div>
+        
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="a"> Tag HTML &lt;a&gt;</h1>
+        <p>A &lt;a&gt; tag define um hiperlink, que é usado para vincular de uma página para outra. O atributo mais importante do < a> elemento é o href atributo , que indica o destino do link. Exemplo: </p>
+        <p><a href="https://www.w3schools.com" target="_blank">Link da W3Schools.com!</a></p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="hr"> Tag HTML &lt;hr&gt;</h1>
+        <p>A &lt;hr&gt;tag define uma quebra temática em uma página HTML (por exemplo, uma mudança de tópico).O elemento é geralmente exibido como uma linha horizontal usada para separar conteúdo (ou definir uma alteração) em uma página HTML. Exemplo: </p>
+        <p>Conteúdo 1</p><hr> <p>Conteúdo 2</p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="sub"> Tag HTML &lt;sub&gt; </h1>
+        <p>A &lt;sub&gt; tag define texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas. Exemplo: </p>
+        <p>Fórmula química da água <sub>H2O</sub>.</p> 
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="sup"> Tag HTML &lt;sup&gt;</h1>
+        <p>A &lt;sup&gt; tag define  texto sobrescrito. O texto sobrescrito aparece meio caractere acima da linha normal e, às vezes, é renderizado em uma fonte menor. O texto sobrescrito pode ser usado para notas de rodapé. Exemplo: </p>
+        <p>Referências bibliográficas nota de rodapé <sup>[1]</sup>.</p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="block"> Tag HTML &lt;blockquote&gt;</h1>
+        <p>A &lt;blockquote&gt; tag especifica uma seção que é citada de outra fonte. Os navegadores geralmente recuam < blockquote>elementos. Exemplo: </p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="del"> Tag HTML &lt;del&gt;</h1>
+        <p>A &lt;del&gt; tag define  o texto que foi excluído de um documento. Os navegadores geralmente riscam o texto excluído. Exemplo: </p>
+        <p>Texto que foi <del>excluído</del>.</p>
+        <small><a href="#inicio">Voltar</a></small>
+
+        <h1 id="abbr"> Tag HTML &lt;abbr&gt;</h1>
+        <p>A &lt;abbr&gt; tag define uma abreviação ou um acrônimo, como "HTML", "CSS", "Sr.", "Dr.", "ASAP", "ATM". Exemplo: </p>
+        <p>A <abbr title="Organização Mundial da Saúde">OMS</abbr> foi fundada em 1948.</p>
+        <small><a href="#inicio">Voltar</a></small>
+       
+        <h1 id="ref"> Referências Bibliográficas</h1>
+        <p>Estas e outras definições de tags foram retiradas de: </p>
+        <p><a href="https://www.w3schools.com" target="_blank">Fonte: W3Schools.com!</a></p>
+        <small><a href="#inicio">Voltar</a></small><br><br>
+
+    </main>
     <hr />
-
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
-
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
-
+    <footer>
+        <p> Desenvolvido por Keila Hadama para fins educacionais</p>
+        <p> DIO - 2025  </p>
+    </footer>
 </body>
 </html>
